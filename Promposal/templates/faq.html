@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}Promposals FAQ{% endblock %}
+
+{% block body %}
+<div class="m-4 d-flex align-items-center justify-content-left" style="width: 50rem;">
+    <div class="card" style="border-width:2px;">
+        <div class="card-body">
+            <h1 id="intro" class="mb-4 pb-0">Promposals FAQ
+                <img src="static/note.png" width="40px" height="40px">
+            </h1>
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h2>
+                        What is this website?
+                    </h2>
+                </div>
+                <div class="card-body pb-0" style="display:none">
+                    <p>
+                        This website is a way for seniors who are wishing to plan a
+                        promposal. It's to ensure that no two people have a promposal at the
+                        same time. This website keeps track of all the school days for the
+                        rest of the year until Prom and records which days are taken.
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h2>
+                        How do you use it?
+                    </h2>
+                </div>
+                <div class="card-body pb-0" style="display:none">
+                    <p>
+                        In the top, you can see there is a navigation bar. Clicking on
+                        "Promposals Calendar" will bring you to the main page. Here, you
+                        can input your Stuyvesant email, OSIS, and the date you wish to
+                        prompose to your significant other. <b>We will be checking the
+                        database every so often</b> and if you input these fields incorrectly or
+                        input nonsense, you will be <i>unsigned</i> up for the date.
+                        <br>
+                        Also, the website only shows all available dates. If someone signs up
+                        for a date, the date will disappear from all the options you can choose
+                        from.
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h2>
+                        What if I forgot what date I signed up for?
+                    </h2>
+                </div>
+                <div class="card-body pb-0" style="display:none">
+                    <p>
+                        Click on "Forgot your Date?" on the navigation bar on top. Input your OSIS
+                        and voilà! Your date will show up.
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h2>
+                        How come some dates are missing?
+                    </h2>
+                </div>
+                <div class="card-body pb-0" style="display:none">
+                    <p>
+                        There can be two reason:
+                    </p>
+                    <ul>
+                        <li>The date is already chosen by someone else.</li>
+                        <li>The date is on a weekend, a day where there's no school, or a parent teacher conference.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h2>
+                        If all chosen dates are removed from the website, how
+                        come I got an error saying someone has chosen a date I chose?
+                    </h2>
+                </div>
+                <div class="card-body pb-0" style="display:none">
+                    <p>
+                        The reason is because both you and that someone went on the website at
+                        around the same time, so the date is shown as available on both users.
+                        The first person chooses the date first, removing it as an option, but that
+                        doesn't get updates and your end because you haven't refreshed your page yet.
+                        So to fix this, just refresh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("card-header");
+
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Promposals Date Finder{% endblock %}
+{% block body %}
+<div class="m-4 d-flex align-items-center justify-content-left">
+    <div class="card" style="border-width:2px;">
+        <div class="card-body">
+            <h1 id="intro" class="mb-0 pb-0">Forgot Your Date?
+                <img src="static/no.png" width="40px" height="40px">
+                <img src="static/brain.png" width="40px" height="40px">
+            </h1>
+            <small class="form-text text-muted text-center mt-0 pt-0">No need to fear, CS is here!</small>
+            <p class="mt-1" style="color:red">{{error}}<b style="color:black">{{bold}}</b>{{notbold}}</p>
+            <form action="/checked">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Your OSIS:</label>
+                    <div>
+                        <input id="ID" class="form-control" width="276" name="ID" placeholder="OSIS">
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger">Submit</button>
+            </form>
+
+            <ul id="dates" class="list-group mt-3">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    var dates = {{all}};
+    if (dates.length >= 1) {
+        var eyes = convert(dates[0]); //change later-->
+        var first = document.createElement("li");
+        first.innerHTML = "You (OSIS {{id}}) registered for:";
+        first.setAttribute("class", "list-group-item alert-success");
+        first.setAttribute("style", "background-color:#cdefda");
+        var mess = document.createElement("li");
+        mess.setAttribute("class", "list-group-item");
+        mess.innerHTML = eyes;
+        document.getElementById("dates").appendChild(first);
+        document.getElementById("dates").appendChild(mess);
+    }
+    if (dates.length > 1) {
+        var mess = document.createElement("li");
+        mess.setAttribute("class", "list-group-item alert-danger");
+        mess.setAttribute("style", "background-color:#fed5d9");
+        mess.innerHTML = "Also, you (or someone other than you) registered you up for all these other dates:"
+        document.getElementById("dates").appendChild(mess);
+        for (let i = 1; i < dates.length; i++) {
+            var eyes = convert(dates[i]); // change later-->
+            var newLI = document.createElement("li");
+            newLI.setAttribute("class", "list-group-item")
+            newLI.innerHTML = eyes;
+            document.getElementById("dates").appendChild(newLI);
+        }
+    }
+</script>
+{% endblock %}
