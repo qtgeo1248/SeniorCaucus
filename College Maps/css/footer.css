@@ -1,0 +1,30 @@
+footer {
+    text-align: center;
+    font-size: 13px;
+    background-color: #4876f3;
+    margin-top: 25pt;
+    padding-bottom: 4px;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #9FB7F9;
+}
+
+#org-name {
+    color: #C6D4FB;
+    padding-top: 13px;
+    margin-bottom: 2px;
+}
+
+#email {
+    color: #9FB7F9;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#source-code {
+    color: #9FB7F9;
+    margin-top: 2px;
+}

@@ -1,0 +1,53 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4876f3;
+}
+
+.active {
+    background-color: #799AF6;
+}
+
+.option:hover {
+    background-color: #799AF6;
+}
+
+.logo {
+    float: left;
+    padding: 0px 20px;
+}
+
+.option {
+    float: right;
+    text-align: center;
+    padding: 14px 10px 15px 10px;
+    font-size: 20px;
+    width: 110px;
+}
+
+#bigname {
+    font-size: 24px;
+    border-bottom: solid 4px #E23C47;
+    padding-bottom: 1px;
+}
+
+#smallnames {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #F6F4F3;
+    font-family: "Trebuchet MS";
+}

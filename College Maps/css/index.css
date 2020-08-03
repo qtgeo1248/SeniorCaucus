@@ -1,0 +1,40 @@
+#title {
+    width: 40%;
+    background: rgb(255, 255, 255, 0.75);
+    margin: 0;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    color: #4876f3;
+    opacity: 6;
+    padding-top: 50px;
+    font-size: 55pt;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #4876f3;
+    opacity: 1;
+    font-size: 40pt;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #537EF3;
+}
+
+h3 b {
+    color: #4070F2;
+}
+
+body {
+    background-image: url("../images/tribeca.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

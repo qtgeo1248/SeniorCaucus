@@ -1,6 +1,50 @@
-{% extends "index.html" %}
-{% block title %}Stuy 2020 College Map{% endblock %}
-
-{% block body %}
-<iframe src="https://www.google.com/maps/d/embed?mid=1RPijwn4G0cqLr3q4s4nXnXCqSqs6hn2z" width="640" height="480"></iframe>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/logo.jpg" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/map.css">
+        <title>Stuy Seniors 2020</title>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li class="navbar-element logo"><a href="/">
+                <div id="bigname">&nbsp&nbsp&nbsp&nbspSenior Caucus</div>
+                <div id="smallnames">Hana & Zeynep</div>
+            </a></li>
+            <li class="navbar-element option">
+                <a href="/about">About</a>
+            </li>
+            <li class="navbar-element option">
+                <a href="/collage">Collage</a>
+            </li>
+            <li class="navbar-element option">
+                <a href="/banner">Banner</a>
+            </li>
+            <li class="navbar-element option active">
+                <a href="/map">College Map</a>
+            </li>
+        </ul>
+        <center>
+            <h1>Stuy Class of 2020 College Map!</h1>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1RPijwn4G0cqLr3q4s4nXnXCqSqs6hn2z"></iframe>
+            <br>
+            <i>
+                Fun Fact: The expansiveness of the Class of 2020 is wider than the British Empire at its peak!
+            </i>
+        </center>
+        <footer>
+            <p id="org-name">Stuyvesant Senior Caucus</p>
+            <p id="email">Have any suggestions? <a href="mailto:georgezhou@stuysu.org">Email here!</a></p>
+            <p id="source-code">Inspect Element? <a href="https://github.com/stuyseniors2020/stuyseniors2020.github.io">Source Code!</a></p>
+        </footer>
+    </body>
+    <!--
+           _
+       .__(.)< (Beep Boop)
+        \___)
+    ~~~~~~~~~~~~~~~~~~-->
+</html>

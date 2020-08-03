@@ -2,16 +2,58 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link rel="icon" href="images/logo.jpg" type="image/x-icon"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Stuy Seniors 2020</title>
     </head>
-
     <body>
-        {% block body %}{% endblock%}
+        <ul class="navbar">
+            <li class="navbar-element logo"><a href="/">
+                <div id="bigname">&nbsp&nbsp&nbsp&nbspSenior Caucus</div>
+                <div id="smallnames">Hana & Zeynep</div>
+            </a></li>
+            <li class="navbar-element option">
+                <a href="/about">About</a>
+            </li>
+            <li class="navbar-element option">
+                <a href="/collage">Collage</a>
+            </li>
+            <li class="navbar-element option">
+                <a href="/banner">Banner</a>
+            </li>
+            <li class="navbar-element option">
+                <a href="/map">College Map</a>
+            </li>
+        </ul>
+        <center>
+            <div id="title">
+                <h1>Senior Caucus</h1>
+                <h2>2020</h2>
+                <h3>Leaving a <b>Legacy</b></h3>
+            </div>
+        </center>
+
+        <!--
+        I was a girl in the village doing alright
+        Then I became a princess overnight
+        Now I gotta figure out how to do it right
+        So much to learn and see
+        Up in the castle with my new family
+        In a school that's just for royalty
+        A whole enchanted world is waiting for me
+        I'm so excited to be (Sofia the First)
+        I'm finding out what being royal's all about (Sofia the First)
+        Making my way, it's an adventure every day (Sofia)
+        It's gonna be my time (Sofia)
+        To show them all that I'm Sofia the First
+        -->
+
+        <footer>
+            <p id="org-name">Stuyvesant Senior Caucus</p>
+            <p id="email">Have any suggestions? <a href="mailto:georgezhou@stuysu.org">Email here!</a></p>
+            <p id="source-code">Inspect Element? <a href="https://github.com/stuyseniors2020/stuyseniors2020.github.io">Source Code!</a></p>
+        </footer>
     </body>
 </html>
